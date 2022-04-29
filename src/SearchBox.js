@@ -1,6 +1,6 @@
 import React from 'react';
 import './SearchBox.css';
-import './FetchData';
+import FetchData from './FetchData';
 const SearchBox = () => {
   return (
     <div className='App-search'>
@@ -8,7 +8,7 @@ const SearchBox = () => {
         className='box' 
         type="text" 
         placeholder='Enter City Name...'/>
-        <button className='searchBtn'>Search</button>
+        <button className='searchBtn' onClick={FetchData}>Search</button>
     </div>
   )
 }
