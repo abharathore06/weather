@@ -1,0 +1,48 @@
+.App-Comments{
+    border: 1px solid white;
+    padding: 10px; 
+    font-family: 'Roboto','sans-serif';
+}
+
+textarea{
+    font-size: 20px;
+    background-color: #f7f2ff;
+    width: 97%;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+::placeholder{
+    color: grey;
+    font-size: 20px;
+}
+
+textarea:focus{
+    color: grey;
+    outline: none;
+}
+
+button{
+    background-color: #7c21d6;
+    width: 110px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    float: left;
+    border: none;
+    height: 40px; 
+}
+
+.commentsList{
+    background-color: #f7f2ff;
+    padding: 10px;
+}
+
+.commentsCount{
+    text-align: left;
+    display: block;
+    color:grey;
+    font-size: 19px;
+}

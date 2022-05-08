@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './commentsAdd.css'
 
 class CommentsAdd extends Component {
     constructor(props) {
@@ -32,30 +33,24 @@ class CommentsAdd extends Component {
     ))
     return (
      <div>
-        <div style={{}}>
+        <div>
           <div>
-          <div style={{border: '1px solid white', padding: '10px', fontFamily: ' Roboto,sans-serif'}}>
+          <div className='App-Comments'>
             <textarea
-          placeholder="Enter your comment here..."
-          value={this.state.usersComment}
-          style={{ fontSize: '20px' , background: '#f7f2ff', width: '97%' ,  border: '1px solid #E5E5E5', borderRadius: '4px', padding: '10px', marginRight: '20px'}}
-          onChange={e => this.userUpdateComment(e)}>
-          </textarea>                   
-<br/>
-    <button 
-       onClick={this.postsComment}
-       style={{ background: '#7c21d6', width: '110px', color: 'white', fontSize: '20px',cursor: 'pointer', float: 'left', border: 'none', height: '40px' }}
-
-      //  style={{ fontSize: '24px', background: '#fff' , cursor: 'pointer', float: 'left'}}
-        >Comment</button>
-        <br/>
-        <br/>
-                 <div
-                  style={{ background: '#f7f2ff', padding: '10px',}}>
-                 <p style={{textAlign: 'left', display: 'block', color:'rgb(80, 80, 80)'}}><b>Comments ({listOfComments.length})</b> </p> 
-                  {listOfComments}
-                 </div>
-
+              placeholder="Enter your comment here..."
+              value={this.state.usersComment}
+              onChange={e => this.userUpdateComment(e)}>
+            </textarea>                   
+            <br/>
+            <button onClick={this.postsComment}>
+                Comment
+            </button>
+            <br/>
+            <br/>
+            <div className='commentsList'>
+              <p className='commentsCount'><b>Comments({listOfComments.length})</b> </p> 
+                {listOfComments}
+              </div>
             </div>
           </div>
       </div>
