@@ -23,8 +23,10 @@
     cursor: pointer;
 }
 
-::placeholder{
+
+input::placeholder{
     color: grey;
+    font-size: 15px;
 }
 
 input:focus {
