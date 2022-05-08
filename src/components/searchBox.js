@@ -6,30 +6,40 @@ class SearchBox extends Component{
   constructor(props) {
     super(props);
     this.state = {
-        cityName : null,
-        }
+      cityName : null,
+    }
     this.handleInputSearch = this.handleInputSearch.bind(this);
   }
+
+
   cityNameUpdate(e) {
     this.setState({ cityName: e.target.value })
   }
 
-handleInputSearch() {
-console.log('handleInputSearch fired');
-this.props.citySearch(this.state.cityName);
-}
+
+  handleInputSearch() {
+  console.log('handleInputSearch fired');
+  this.props.citySearch(this.state.cityName);
+  }
+
+
   render(){
+
     return(
+
       <div className="App-search">
-          <input className='box' type="text" placeholder='Enter City Name...' value={this.state.cityName} onChange={e => this.cityNameUpdate(e)}/>
-          <button onClick={this.handleInputSearch} className='searchBtn'>Search</button>
+        <input className='box' type="text" placeholder='Enter City Name...' value={this.state.cityName} onChange={e => this.cityNameUpdate(e)}/>
+        <button onClick={this.handleInputSearch} className='searchBtn'>Search</button>
       </div>
+
     );
   }
 } 
 
+
 SearchBox.propTypes = {
   citySearch: PropTypes.func
 };
+
 
 export default SearchBox;

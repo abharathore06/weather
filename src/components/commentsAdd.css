@@ -4,6 +4,11 @@
     font-family: 'Roboto','sans-serif';
 }
 
+.userIcon{
+    text-align: left;
+    font-size: 19px;
+}
+
 textarea{
     font-size: 20px;
     background-color: #f7f2ff;
@@ -24,7 +29,7 @@ textarea:focus{
     outline: none;
 }
 
-button{
+.comment-btn{
     background-color: #7c21d6;
     width: 110px;
     color: white;
@@ -32,10 +37,12 @@ button{
     cursor: pointer;
     float: left;
     border: none;
-    height: 40px; 
+    height: 40px;
+    margin-top: 10px;
 }
 
 .commentsList{
+    margin-top: 30px;
     background-color: #f7f2ff;
     padding: 10px;
 }
@@ -43,6 +50,7 @@ button{
 .commentsCount{
     text-align: left;
     display: block;
-    color:grey;
+    color:rgb(117, 116, 116);
     font-size: 19px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

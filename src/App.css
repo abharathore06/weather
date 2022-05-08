@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
-/* .App {
-  text-align: center;
-} */
 
 .App-logo {
   height: 40vmin;
@@ -17,7 +14,6 @@
 .App-header {
   background-color: #7c21d6;
   margin-top: -22px;
-  /* padding: 10px; */
   align-items: center;
   font-family: 'Raleway', sans-serif;
   color: white;
@@ -29,6 +25,32 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.App-NotFound{
+  background-color: white;
+  color: grey;
+  text-align: center;
+  box-shadow: 0px 4px 32px rgba(143, 143, 143, 0.4);
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.City-Search{
+  background-color: white;
+  color: grey;
+  text-align: justify;
+  box-shadow: 0px 4px 32px rgba(143, 143, 143, 0.4);
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 @keyframes App-logo-spin {
